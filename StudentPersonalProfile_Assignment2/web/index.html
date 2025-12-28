@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enhanced Student Profile Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ff9ad5, #ffe6f5);
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background: #000;
+            color: #fff;
+            padding: 25px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .container {
+            max-width: 550px;
+            background: #fff;
+            margin: 50px auto;
+            padding: 30px;
+            border-radius: 18px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            animation: fadeIn 0.6s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 22px;
+            color: #444;
+            margin-bottom: 25px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 8px;
+            color: #d63384;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            font-size: 15px;
+            margin-bottom: 18px;
+            transition: 0.3s;
+        }
+
+        input[type="text"]:focus {
+            border-color: #ff4dc4;
+            box-shadow: 0 0 8px rgba(255, 77, 196, 0.5);
+            outline: none;
+        }
+
+        .button {
+            width: 100%;
+            background: #ff4dc4;
+            color: #fff;
+            padding: 15px;
+            border: none;
+            border-radius: 10px;
+            font-size: 17px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background: #ff0fa8;
+            transform: scale(1.03);
+        }
+
+        .footer-text {
+            text-align: center;
+            margin-top: 25px;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">STUDENT PROFILE FORM</div>
+
+    <div class="container">
+        <h2>Enter Student Information</h2>
+
+        
+    <form action="profile.jsp" method="post">
+        <label>Name</label>
+        <input type="text" name="nama" required />
+
+        <label>Student ID</label>
+        <input type="text" name="studentID" required />
+
+        <label>Program</label>
+        <input type="text" name="program" required />
+
+        <label>Email</label>
+        <input type="text" name="email" required />
+
+        <label>Hobbies</label>
+        <input type="text" name="hobbies" required />
+
+        <label>Short Self Introduction</label>
+        <input type="text" name="shortSelfIntro" required />
+
+        <button type="submit" class="button">Submit Profile</button>
+    </form>
+
+
+        
+    </div>
+
+</body>
+</html>
